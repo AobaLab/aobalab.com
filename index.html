@@ -1,1 +1,151 @@
-hello aobalab!
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AobaLab</title>
+
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&family=Zen+Kaku+Gothic+New&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-bar">
+            <div class="logo"></div>
+            <div class="navigation">
+                <div class="link">
+                    <a href="#service"><span>Service</span></a>
+                </div>
+                <div class="link">
+                    <a href="#works"><span>Works</span></a>
+                </div>
+                <div class="link">
+                    <a href="#contact"><span>Contact</span></a>
+                </div>
+            </div>
+            <div class="mobile-navigation">
+                <input type="checkbox" id="menu-btn-check">
+                <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                <div class="menu-content">
+                    <ul>
+                        <li class="mobile-link">
+                            <a href="#"><span>Top</span></a>
+                        </li>
+                        <li class="mobile-link">
+                            <a href="#service"><span>Service</span></a>
+                        </li>
+                        <li class="mobile-link">
+                            <a href="#works"><span>Works</span></a>
+                        </li>
+                        <li class="mobile-link">
+                            <a href="#contact"><span>Contact</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section class="top">
+            <span class="lead-title">ITのはじめてのハードルを<br>越えやすくする</span>
+            <div class="lead-content">
+                <div class="lead-text">
+                    <p>移りゆく時代の中で、 <br>IT分野に接する機会が増えてきました。 </p>
+                    <p>はじめてのことにハードルが高く感じることもあるかと思います。</p>
+                    <p>そこで私たちは、そうした「はじめてのハードル」を超えやすくする<br>ITの道具や仕組みを提供します。 </p>
+                    <p>私たちは、ITを誰もが使いこなせる世の中を目指します。</p>
+                </div>
+                <div class="top-img">
+                    <img src="./img/top.png">
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section id="service" class="services">
+            <div class="section-title">
+                <h2>Service</h2>
+            </div>
+            <div class="service-list">
+                <div class="service">
+                    <div class="service-img-container">
+                        <div class="service-img">
+                            <img src="./img/pc.png" alt="">
+                        </div>
+                    </div>
+                    <div class="service-title">
+                        <h3>Web制作</h3>
+                    </div>
+                    <div class="service-text">
+                        <p>新規Webサイトの制作やリニューアルを行います。企画から運用保守までトータルに対応します。また、SNSや広告用の画像素材の作成も可能です。</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="service-img-container">
+                        <div class="service-img">
+                            <img src="./img/phone.png" alt="">
+                        </div>
+                    </div>
+                    <div class="service-title">
+                        <h3>アプリ開発</h3>
+                    </div>
+                    <div class="service-text">
+                        <p>スマートフォンで利用するアプリを要件に合わせてフルスクラッチで開発します。システム構成の提案から運用までワンストップで対応可能です。</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="service-img-container">
+                        <div class="service-img">
+                            <img src="./img/idea.png" alt="">
+                        </div>
+                    </div>
+                    <div class="service-title">
+                        <h3>技術支援</h3>
+                    </div>
+                    <div class="service-text">
+                        <p>新規事業に必要となる先端技術を用いたシステムの導入支援を行います。まずは調査から行い、試作段階からデモを行うことが可能です。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="works" class="works">
+            <div class="section-title">
+                <h2>Works</h2>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="contact-text">
+                <p>お問合せはこちら</p>
+            </div>
+            <div class="contact-button">
+                <a>お問合せフォーム</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-logo">
+            <img src="./img/footer-logo.png" alt="">
+        </div>
+        <small>©︎ AobaLab</small>
+    </footer>
+
+    <script>
+        const checkBox = document.querySelector('#menu-btn-check')
+        const links = document.querySelectorAll('.mobile-link')
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                checkBox.checked = false
+            })
+        })
+    </script>
+</body>
+
+</html>
