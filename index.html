@@ -30,6 +30,26 @@
                     <a href="#contact"><span>Contact</span></a>
                 </div>
             </div>
+            <div class="mobile-navigation">
+                <input type="checkbox" id="menu-btn-check">
+                <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                <div class="menu-content">
+                    <ul>
+                        <li class="mobile-link">
+                            <a href="#"><span>Top</span></a>
+                        </li>
+                        <li class="mobile-link">
+                            <a href="#service"><span>Service</span></a>
+                        </li>
+                        <li class="mobile-link">
+                            <a href="#works"><span>Works</span></a>
+                        </li>
+                        <li class="mobile-link">
+                            <a href="#contact"><span>Contact</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <section class="top">
             <span class="lead-title">ITのはじめてのハードルを<br>越えやすくする</span>
@@ -115,6 +135,16 @@
         </div>
         <small>©︎ AobaLab</small>
     </footer>
+
+    <script>
+        const checkBox = document.querySelector('#menu-btn-check')
+        const links = document.querySelectorAll('.mobile-link')
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                checkBox.checked = false
+            })
+        })
+    </script>
 </body>
 
 </html>
