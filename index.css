@@ -282,7 +282,7 @@ small {
     .menu-content ul li a {
         display: block;
         width: 100%;
-        font-size: 15px;
+        font-size: 18px;
         box-sizing: border-box;
         color: #ffffff;
         text-decoration: none;
@@ -324,7 +324,7 @@ small {
 
     .lead-title {
         font-size: 24px;
-        line-height: 2rem;
+        line-height: 2.5rem;
     }
 
     .lead-text {
