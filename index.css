@@ -203,6 +203,19 @@ small {
         height: 10vw;
     }
 
+    .work {
+        width: 25%;
+    }
+
+    .work img {
+        width: 100%;
+        border-radius: 30px;
+    }
+
+    .work p {
+        margin-top: 15px;
+    }
+
     .contact-button {
         width: 25%;
     }
@@ -354,6 +367,23 @@ small {
     .service-img {
         width: 30vw;
         height: 30vw;
+    }
+
+    .work {
+        margin-top: 30px;
+    }
+
+    .work img {
+        width: 100%;
+        border-radius: 30px;
+    }
+
+    .work p {
+        margin-top: 15px;
+    }
+
+    .contact-button {
+        width: 25%;
     }
 
     .contact-button {
