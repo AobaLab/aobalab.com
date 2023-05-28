@@ -116,6 +116,16 @@ section {
     line-height: 2rem;
 }
 
+/* works */
+
+.works-container {
+    display: flex;
+}
+
+.work {
+    padding: 1rem;
+}
+
 /* contact */
 .contact {
     position: relative;
@@ -367,6 +377,10 @@ small {
     .service-img {
         width: 30vw;
         height: 30vw;
+    }
+
+    .works-container {
+        flex-direction: column;
     }
 
     .work {
